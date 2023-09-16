@@ -1,0 +1,360 @@
+.dashboard {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0, 211, 253, 0.63), rgba(128, 255, 0, 0.539), white);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.dashboard > div {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-section,
+.main-section2 {
+    width: clamp(320px, 80%, 1000px);
+    min-height: 500px;
+    background-color: white;
+    margin-top:70px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+h3 {
+    font-size: 32px;
+    margin: 0px;
+    user-select: none;
+}
+
+h4 {
+    font-size: 22px;
+    margin: 0px;
+}
+
+.main-section2 > h2 {
+    margin: 0px;
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    
+}
+
+.mode-select {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    transition: transform 0.2s linear;
+}
+
+.mode-select:hover {
+    transform: scale(1.2);
+}
+
+.select-things {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    gap: 20px;
+}
+
+.select-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.select-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.select-buttons > button {
+    font-size: 24px;
+}
+
+.further {
+    width: 100%
+}
+
+.multiplayer-select {
+    width: 60%;
+    border: 3px solid var(--blue);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.multi-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.player {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid var(--blue);
+    
+}
+
+.player > button {
+    font-size: 15px;
+}
+
+.single-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.screen-cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 0px;
+    height: 0px;
+}
+
+#screen-out {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.600);
+}
+
+.screen-box,
+.results-screen {
+    background-color: white;
+    width: clamp(320px, 50%, 600px);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    border: 3px solid var(--blue);
+}
+
+.challenge {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    border-bottom: 3px solid var(--blue);
+    height: 90px
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 100%;
+}
+
+.top > button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px solid black;
+    box-shadow: 0px 0px 0px 0px black;
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.top > h2 {
+    margin-left: 20px;
+}
+
+
+.last-player {
+    border: 0px solid black;
+}
+
+#answer,
+#answer-multi {
+    width: 200px;
+    font-size: 20px;
+    border: 0px solid black;
+    border-bottom: 2px solid black;;
+}
+
+label {
+    font-size: 20px;
+    font-family: "Radley", serif;
+}
+
+.picture-container {
+    border: 2px solid black;
+}
+
+.main-section2 > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#answer:focus,
+#answer-multi:focus {
+    outline: none;
+}
+
+.main-section2 {
+    gap: 20px;
+}
+
+.main-section2 > button {
+    margin-bottom: 50px
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+#correct {
+    background-color: green;
+}
+
+#incorrect {
+    background-color: red;
+}
+
+#invisible {
+    display: none
+}
+
+.multi-player- {
+    margin-top: 50px;
+}
+
+.multi-player- {
+    width: 100%;
+}
+
+.loading-dots {
+    height: 70px;
+    margin: -30px -30px -30px -30px;
+}
+
+.avatar {
+    height: 90px;
+}
+
+.multi-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.avatar-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;;
+}
+
+.main-section > div {
+    width: 100%;
+}
+
+.picture-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture-container > h1 {
+    position: absolute;
+    color: white;
+    box-shadow: 0p 2px 5px 5px black;
+}
+
+@media (max-width: 700px) {
+    .challenge {
+        flex-direction: column;
+        padding-bottom: 30px;;
+    }
+
+    .player {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .multi-display {
+        flex-wrap: wrap;
+    }
+    
+    .avatar-display {
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    .home-screen-logo {
+        display: none
+    }
+
+    .left-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .nav-bar {
+        align-items: center;
+    }
+
+    .hero-section {
+        height: 100%;
+    }
+
+    .right-nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%
+    }
+
+}
+
